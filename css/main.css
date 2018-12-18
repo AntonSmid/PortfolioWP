@@ -1,10 +1,14 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:400,700i');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:400,700,700i');
 /*font-family: 'Roboto Mono', monospace;*/
 
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto Mono', monospace;
 }
 
 :root {
@@ -22,8 +26,57 @@
 }
 /* end of nav */
 
-1:22:08
 
-body {
-  font-family: 'Roboto Mono', monospace;
+
+/* header */
+
+.header {
+  min-height: 100vh;
+  background: url(/img/pexels-photo.jpg) center/cover fixed no-repeat;
+  
+  display: flex;
+  flex-direction: column;
 }
+
+/* end of header */
+
+
+
+/* benner */
+.banner {
+  /* as a flex child */
+  flex: 1 0 auto;
+  /* as flex parent */
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  
+  color: var(--dark);
+  text-align: center;
+  padding-bottom: 4rem;
+  font-weight: 700;
+  background-color: rgba(0,0,100,.3);
+}
+
+.banner__title {
+  
+  font-size: 4rem;
+  letter-spacing: 0.15rem;
+  margin-bottom: .5rem;
+  font-style: italic;
+  text-shadow: 2px 2px 2px #fff;
+  text-transform: capitalize;
+}
+
+.banner__jobs {
+  letter-spacing: .15rem;
+  text-transform: capitalize;
+  font-size: 1.5rem;
+  color: var(--light);
+  text-shadow: 2px 2px 2px #000;
+}
+
+/* end of benner */
+
+
+
