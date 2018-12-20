@@ -16,7 +16,7 @@ body {
   --dark: #181b24;
   --grey: #899495;
   --orange: #fc5130;
-  --SectionGray: #f2f2f2;
+  --SectionGrey: #f2f2f2;
   --SectionWhite: #fff;
   
 }
@@ -120,9 +120,11 @@ body {
 }
 
 .about-info__title {
-  font-size: 3rem;
+  font-size: 4rem;
   text-transform: capitalize;
   letter-spacing: .5rem;
+  background: rgba(255,255,255,.4);
+  background: url("../img/bg-light.png") no-repeat;
   
 }
 
@@ -189,13 +191,102 @@ body {
     display: flex;
     align-items: flex-end;
   }
-
-
-/* end of about section */
-/*  1:58:00 */
   
 }
 
+/* end of about section */
+
+
+
+/* services section */
+
+/*title*/
+.section-title {
+  text-align: center;
+}
+
+.section-title__name {
+  font-size: 4rem;
+  letter-spacing: .5rem;
+  background: url("../img/bg-light.png") center no-repeat;
+  text-transform: capitalize;
+  font-weight: 700;
+  font-style: italic;
+}
+
+/*services*/
+.services {
+  background: var(--SectionGrey);
+  padding: 3rem 0;
+}
+
+.services__center {
+  max-width: 90vw;
+  margin: 2rem auto;
+}
+
+.services__single-service {
+  margin: 2rem auto;
+  text-align: center;
+  padding: 2rem 0;
+  
+  transition: all .5s ease-in;
+}
+
+.services__single-service:hover {
+  background: var(--light);
+  box-shadow: 0 15px 20px rgba(0,0,0,0.1);
+}
+
+.services__single-service-icon {
+  font-size: 3rem;
+}
+
+.services__single-service-title {
+  text-transform: uppercase;
+  font-weight: 700;
+  margin: 1rem 0;
+  letter-spacing: .2rem;
+}
+
+.services__single-service-text {
+  margin: 0 auto;
+  width: 80%;
+  text-align: left;
+  line-height: 1.5;
+  letter-spacing: .2rem;
+}
+
+/********************************************/
+/*     media queries for bigger screens     */
+/********************************************/
+@media screen and (min-width:768px) {
+  
+  .services__center {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .services__single-service {
+    flex: 0 0 calc(50% - .5rem);
+  }
+  
+  
+}
+
+@media screen and (min-width:992px) {
+    .services__single-service {
+    flex: 0 0 calc(33.33% - .25rem);
+  }
+  
+}
+
+/* 2:18:55 */
+
+
+
+/* end of services section */
 
 
 
