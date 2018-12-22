@@ -489,6 +489,7 @@ body {
   font-size: 1.5rem;
   text-transform: uppercase;
   letter-spacing: .5rem;
+  
   transition: all .5s linear;
 }
 
@@ -506,7 +507,39 @@ contact__icon {
 /* 3:10:10 */
 
 
+/* footer section */
 
+.footer {
+  background: var(--dark);
+  padding: 3rem 0;
+}
+
+.footer__icons {
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer__single-icon {
+  font-size: 2rem;
+  color: var(--grey);
+  
+  transition: all .5s ease;
+}
+
+.footer__single-icon:hover {
+  color: var(--light);
+}
+
+.footer p {
+  text-align: center;
+  color: var(--grey);
+  margin: 0 auto;
+  font-size: .9rem;
+  padding-top: 1.2rem;
+}
+
+
+/* end of footer section */
 
 
 
